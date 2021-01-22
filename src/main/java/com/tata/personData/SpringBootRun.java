@@ -1,10 +1,10 @@
-package com.tata.test;
+package com.tata.personData;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan("com.tata.test")
+@ComponentScan("com.tata.personData")
 @SpringBootApplication
 public class SpringBootRun {
 

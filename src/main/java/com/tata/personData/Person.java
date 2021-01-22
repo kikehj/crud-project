@@ -1,4 +1,4 @@
-package com.tata.test;
+package com.tata.personData;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -7,7 +7,8 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Pattern;  
 @Entity
 public class Person {
 	

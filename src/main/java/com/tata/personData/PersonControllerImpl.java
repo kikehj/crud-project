@@ -1,4 +1,4 @@
-package com.tata.test;
+package com.tata.personData;
 
 import java.util.List;
 
@@ -16,14 +16,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class PersonControllerImpl implements PersonController {
 
 	@Autowired
-	PersonService service;
+	private PersonService service;
 	
 	@Override
 	@RequestMapping(path="/create", method = RequestMethod.POST)
 	public void createPerson(@RequestBody Person person) {
-		//System.out.println("***************" + person.toString());
-		service.create(person);
 		
+		service.create(person);
 		
 	}
 
@@ -40,14 +39,13 @@ public class PersonControllerImpl implements PersonController {
 	public void updatePerson(@RequestBody Person person) {
 		
 		service.update(person);
-		//System.out.println(person.toString());
 		
 	}
 	
 	@Override
 	@RequestMapping(path="/delete/{id}", method = RequestMethod.DELETE)
 	public void deletePerson(@PathVariable int id) {
-		//System.out.println("entré" + id);
+
 		service.delete(id);
 		
 	}

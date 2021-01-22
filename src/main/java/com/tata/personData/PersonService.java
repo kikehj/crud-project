@@ -1,4 +1,4 @@
-package com.tata.test;
+package com.tata.personData;
 
 import java.util.List;
 
