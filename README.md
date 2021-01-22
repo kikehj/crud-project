@@ -13,7 +13,7 @@ Next go to BootDashboard > right-click > RE(start)
 Proyect wil be running in 10091 port, you can change this in application.properties
 
 #How to use ⚙️
-The project consists of 4 endpoints, once is running, these are available at http://localhost:10091/crud/<operation>, where operation is (create, read, update) and delete/<num>
+The project consists of 4 endpoints, once is running, these are available at http://localhost:10091/crud/{operation}, where operation is (create, read, update) and delete/{num}
 where num is the number of the item to delete.
 
 #Tools, libraries and frameworks used 🛠️
